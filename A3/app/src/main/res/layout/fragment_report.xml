@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:id="@+id/tvPickDate"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:baselineAligned="false"
+        android:layout_marginTop="50dp"
+        android:text="Please select a day to track your calories against goals" />
+
+    <EditText
+        android:id="@+id/etDatePieChart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:layout_below="@+id/tvPickDate"
+        android:hint="Select a date"
+        tools:ignore="Deprecated" />
+
+    <Button
+        android:id="@+id/bShowPieChart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etDatePieChart"
+        android:text="Show Pie Chart" />
+
+<com.github.mikephil.charting.charts.PieChart
+    android:layout_width="350dp"
+
+    android:id="@+id/idPieChart"
+    android:layout_below="@+id/bShowPieChart"
+    android:layout_height="300dp"
+
+
+
+
+    ></com.github.mikephil.charting.charts.PieChart>
+
+
+
+
+    <TextView
+        android:id="@+id/tvPickDatesForBarChart"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_below="@+id/idPieChart"
+        android:baselineAligned="false"
+        android:text="Please select the duration to track your calories consumed vs burned " />
+
+    <EditText
+        android:id="@+id/etDateStartBarChart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:layout_below="@+id/tvPickDatesForBarChart"
+        android:hint="Select starting date"
+        tools:ignore="Deprecated" />
+
+    <EditText
+        android:id="@+id/etDateEndBarChart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:layout_below="@+id/etDateStartBarChart"
+        android:hint="Select ending date"
+        tools:ignore="Deprecated" />
+
+    <Button
+        android:id="@+id/bShowBarChart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etDateEndBarChart"
+        android:text="Show Bar Chart" />
+
+
+
+<com.github.mikephil.charting.charts.BarChart
+    android:layout_width="370dp"
+    android:layout_height="300dp"
+    android:id="@+id/idBarChart"
+    android:layout_below="@+id/bShowBarChart"
+
+
+    ></com.github.mikephil.charting.charts.BarChart>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

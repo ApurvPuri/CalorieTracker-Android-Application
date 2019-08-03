@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="230dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/tricepspushupleanmuscular" />
+
+    <TextView
+        android:id="@+id/displayName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageView"
+        android:baselineAligned="false" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/calFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_below="@+id/timeView"
+        android:baselineAligned="false" />
+
+
+    <EditText
+        android:id="@+id/calGoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="330dp"
+        android:inputType="number"
+        android:hint="Enter Calorie Goal for today" />
+
+    <Button
+        android:id="@+id/addCalGoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calGoal"
+        android:layout_marginTop="19dp"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/timeView"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_below="@+id/addCalGoal"
+        android:baselineAligned="false" />
+</RelativeLayout>

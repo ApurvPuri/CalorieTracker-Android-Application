@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <EditText
+        android:id="@+id/steps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:inputType="number"
+        android:hint="Enter Steps Taken" />
+
+    <Button
+        android:id="@+id/submitSteps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/steps"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/stepsFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_below="@+id/submitSteps"
+        android:baselineAligned="false" />
+
+    <Button
+        android:id="@+id/showStepsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stepsFeedback"
+        android:text="Steps taken so far" />
+
+    <TextView
+        android:id="@+id/showSteps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showStepsButton" />
+
+
+    <EditText
+        android:id="@+id/editSteps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showSteps"
+        android:hint="To change previously entered steps, enter the step ID followed by correct steps" />
+
+    <Button
+    android:id="@+id/submitEditSteps"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/editSteps"
+    android:text="Submit" />
+
+    <TextView
+        android:id="@+id/editStepsFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_below="@+id/submitEditSteps"
+        android:baselineAligned="false" />
+
+    <Button
+        android:id="@+id/totalSteps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editStepsFeedback"
+        android:text="Total Steps taken today" />
+
+    <TextView
+        android:id="@+id/totalStepsFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_below="@+id/totalSteps"
+        android:baselineAligned="false" />
+
+</RelativeLayout>

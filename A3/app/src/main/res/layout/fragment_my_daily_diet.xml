@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin">
+
+
+    <TextView
+        android:id="@+id/tvSelectFoodCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="17sp"
+        android:paddingBottom="5dp"
+        android:text="Select Food Category" />
+
+    <Spinner
+        android:id="@+id/sFoodCategory"
+        android:layout_below="@+id/tvSelectFoodCategory"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingBottom="5dp"
+        android:hint="Please select food category" />
+
+    <TextView
+        android:id="@+id/tvFoodHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sFoodCategory"
+        android:textSize="17sp"
+        android:paddingBottom="5dp"
+        android:text="Select food under selected category" />
+
+    <Spinner
+        android:id="@+id/sFoodUnderSpecificCategory"
+        android:layout_below="@+id/tvFoodHint"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingBottom="5dp"
+        android:hint="Please select food a food item" />
+
+    <TextView
+        android:id="@+id/foodConsumedFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="5dp"
+        android:layout_below="@+id/sFoodUnderSpecificCategory"
+        android:baselineAligned="false" />
+
+    <TextView
+        android:id="@+id/tvAddFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:paddingBottom="5dp"
+        android:layout_below="@+id/foodConsumedFeedback"
+        android:text="Add new food item"/>
+
+    <EditText
+        android:id="@+id/etAddNewFoodName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAddFood"
+        android:paddingBottom="5dp"
+        android:hint="Enter the name of the new food item" />
+
+    <Button
+        android:id="@+id/bAddFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etAddNewFoodName"
+        android:paddingBottom="5dp"
+        android:text="Add"/>
+    <TextView
+        android:id="@+id/tvAddFoodServerFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:paddingBottom="5dp"
+        android:layout_below="@+id/bAddFood"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="330dp"
+        android:layout_height="230dp"
+        android:layout_below="@+id/tvAddFoodServerFeedback"/>
+
+    <TextView
+        android:id="@+id/addFoodFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/imageView"
+        android:baselineAligned="false" />
+
+
+
+</RelativeLayout>

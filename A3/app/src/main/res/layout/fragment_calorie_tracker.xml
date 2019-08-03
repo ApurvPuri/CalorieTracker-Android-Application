@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:id="@+id/tvShowReport"
+        android:layout_width="match_parent"
+
+        android:layout_marginTop="50dp"
+        android:layout_height="57dp"
+        android:textSize="8pt"
+        android:text="             Today's Calorie Track" />
+
+    <TextView
+        android:id="@+id/tvGoal"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_below="@+id/tvShowReport"
+        android:baselineAligned="false" />
+
+    <TextView
+        android:id="@+id/tvStepsTaken"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_below="@+id/tvGoal"
+        android:baselineAligned="false" />
+
+    <TextView
+        android:id="@+id/tvCalConsumed"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_below="@+id/tvStepsTaken"
+        android:baselineAligned="false" />
+
+    <TextView
+        android:id="@+id/tvCalBurned"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_below="@+id/tvCalConsumed"
+        android:baselineAligned="false" />
+
+    <Button
+        android:id="@+id/bSubmitReportService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCalBurned"
+        android:hint="Submit" />
+
+    <TextView
+        android:id="@+id/tvSubmitFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_below="@+id/bSubmitReportService"
+        android:baselineAligned="false" />
+
+</RelativeLayout>
